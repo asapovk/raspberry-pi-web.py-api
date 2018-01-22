@@ -11,10 +11,13 @@ class index:
         return render.home()
     def POST(self):
         data = json.loads(web.data())
-        #Здесь ты вызываешь свою фукцию, которая принимает данные data и делает с ними то что
-        # тебе нужно    
+        print data
+        #function (data)
         return data
 
 
 if __name__ == '__main__':
     web.application(urls, globals()).run()
+
+
+# def function (data):
